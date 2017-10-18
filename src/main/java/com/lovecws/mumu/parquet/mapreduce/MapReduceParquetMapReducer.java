@@ -1,14 +1,10 @@
 package com.lovecws.mumu.parquet.mapreduce;
 
-import com.lovecws.mumu.parquet.ParquetConfiguration;
 import org.apache.avro.Schema;
 import org.apache.avro.generic.GenericData;
 import org.apache.avro.generic.GenericRecord;
-import org.apache.commons.lang.time.DateFormatUtils;
 import org.apache.hadoop.conf.Configured;
-import org.apache.hadoop.fs.FileStatus;
 import org.apache.hadoop.fs.Path;
-import org.apache.hadoop.hdfs.DistributedFileSystem;
 import org.apache.hadoop.io.LongWritable;
 import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapreduce.Job;
@@ -21,7 +17,6 @@ import org.apache.parquet.avro.AvroParquetOutputFormat;
 import org.apache.parquet.example.data.Group;
 
 import java.io.IOException;
-import java.util.Date;
 
 /**
  * @author babymm
